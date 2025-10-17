@@ -1,43 +1,16 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* رنگ‌ها به‌صورت CSS vars */
-:root {
-  --bg: #ffffff;
-  --fg: #0f172a;         /* slate-900 */
-  --muted: #64748b;      /* slate-500 */
-  --primary: #2563eb;    /* blue-600 */
-  --secondary: #0ea5e9;  /* sky-500 */
-  --border: #e5e7eb;     /* gray-200 */
-}
-
-/* حالت تیره با کلاس .dark روی <html> */
-.dark {
+/* تم روشن/تیره دلخواه (اختیاری) */
+:root{
   --bg: #0b1220;
   --fg: #e5e7eb;
-  --muted: #94a3b8;
-  --primary: #60a5fa;   /* blue-400 */
-  --secondary: #38bdf8; /* sky-400 */
-  --border: #1f2937;    /* gray-800 */
 }
 
-/* نگاشت vars به توکن‌های Tailwind v4 */
-@theme inline {
-  --color-bg: var(--bg);
-  --color-fg: var(--fg);
-  --color-muted: var(--muted);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-border: var(--border);
-}
-
-html, body { height: 100%; }
-
-/* حالا می‌توانیم از bg-bg و text-fg استفاده کنیم */
-body {
-  @apply bg-bg text-fg antialiased;
-}
-
-/* لینک‌ها */
-.prose :where(a):not(:where([class~="not-prose"] *)) {
-  text-decoration: none;
+body{
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
