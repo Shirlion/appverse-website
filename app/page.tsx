@@ -1,3 +1,4 @@
+// app/page.tsx
 export const metadata = {
   title: "AppVerse Privacy Center",
   description: "Official privacy & legal pages for AppVerse apps.",
