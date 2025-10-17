@@ -1,14 +1,18 @@
-export default async function sitemap() {
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.appverse.technology";
   return [
-    { url: `${base}/` },
-    { url: `${base}/apps` },
-    { url: `${base}/apps/typingo` },
-    { url: `${base}/apps/emoji-ai` },
-    { url: `${base}/apps/meowwoof-ai` },
-    { url: `${base}/contact` },
-    { url: `${base}/en/legal/privacy` },
-    { url: `${base}/en/legal/terms` },
-    { url: `${base}/en/legal/cookies` },
+    { url: `${base}/`,            lastModified: new Date() },
+    { url: `${base}/apps`,        lastModified: new Date() },
+    { url: `${base}/apps/typingo`, lastModified: new Date() },
+    { url: `${base}/apps/emoji-ai`, lastModified: new Date() },
+    { url: `${base}/about`,       lastModified: new Date() },
+    { url: `${base}/pricing`,     lastModified: new Date() },
+    { url: `${base}/support`,     lastModified: new Date() },
+    { url: `${base}/contact`,     lastModified: new Date() },
+    { url: `${base}/en/legal/privacy`, lastModified: new Date() },
+    { url: `${base}/en/legal/terms`,   lastModified: new Date() },
+    { url: `${base}/en/legal/cookies`, lastModified: new Date() },
   ];
 }
