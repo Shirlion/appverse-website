@@ -4,7 +4,7 @@ export default function TypingoPage() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16">
       <h1 className="text-3xl font-bold">Typingo</h1>
-      <p className="text-slate-600 mt-2">Minimal typing practice that stores data only on-device.</p>
+      <p className="mt-2 text-slate-600">Minimal typing practice that stores data only on-device.</p>
 
       <div className="mt-6 grid gap-6 sm:grid-cols-2">
         <div className="rounded-xl bg-white border border-gray-200 p-6">Screenshot / Demo</div>
