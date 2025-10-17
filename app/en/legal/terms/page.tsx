@@ -1,4 +1,4 @@
-import PrintButton from "../../../..components/PrintButton";
+import PrintButton from "../../../components/PrintButton";
 export const metadata = { title: "Terms of Service – AppVerse", description: "Terms governing the use of AppVerse services." };
 
 function L({ href, children }: { href: string; children: React.ReactNode }) {
