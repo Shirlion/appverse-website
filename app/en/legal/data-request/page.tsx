@@ -1,5 +1,5 @@
-import DSARForm from "@/app/components/DSARForm";
-import PrintButton from "@/app/components/PrintButton";
+import DSARForm from "../../../components/DSARForm";
+import PrintButton from "../../../components/PrintButton";
 
 export const metadata = {
   title: "Data Request (DSAR) – AppVerse",
