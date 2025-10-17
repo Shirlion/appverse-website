@@ -1,3 +1,4 @@
+// app/support/page.tsx
 export const metadata = { title: "Support — AppVerse" };
 
 const faqs = [
