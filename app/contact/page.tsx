@@ -1,19 +1,16 @@
-import ContactForm from "@/components/ContactForm";
-
-export const metadata = {
-  title: "Contact",
-  description: "Get in touch with AppVerse.",
-};
+export const metadata = { title: "Contact — AppVerse" };
 
 export default function ContactPage() {
   return (
-    <section className="max-w-xl">
+    <section className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-3xl font-bold mb-2">Contact</h1>
-      <p className="text-gray-400 mb-6">
-        For press, support, or partnerships. You can also email{" "}
-        <a className="text-sky-400" href="mailto:contact@appverse.com">contact@appverse.com</a>.
-      </p>
-      <ContactForm />
+      <p className="text-slate-600 mb-6">We usually reply within 2–3 business days.</p>
+
+      <div className="rounded-2xl bg-white border border-gray-200 p-6">
+        <p>Email: <a className="text-[#0078D4] hover:underline" href="mailto:contact@appverse.com">contact@appverse.com</a></p>
+        <p className="mt-2">Support: <a className="text-[#0078D4] hover:underline" href="mailto:support@appverse.com">support@appverse.com</a></p>
+        <p className="mt-2">Twitter/X: <a className="text-[#0078D4] hover:underline" href="#">@appverse</a></p>
+      </div>
     </section>
   );
 }
