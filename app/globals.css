@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+/* رنگ‌ها به‌صورت CSS vars */
 :root {
   --bg: #ffffff;
   --fg: #0f172a;         /* slate-900 */
@@ -11,6 +10,7 @@
   --border: #e5e7eb;     /* gray-200 */
 }
 
+/* حالت تیره با کلاس .dark روی <html> */
 .dark {
   --bg: #0b1220;
   --fg: #e5e7eb;
@@ -20,14 +20,24 @@
   --border: #1f2937;    /* gray-800 */
 }
 
-html, body {
-  height: 100%;
+/* نگاشت vars به توکن‌های Tailwind v4 */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
 }
 
+html, body { height: 100%; }
+
+/* حالا می‌توانیم از bg-bg و text-fg استفاده کنیم */
 body {
   @apply bg-bg text-fg antialiased;
 }
 
+/* لینک‌ها */
 .prose :where(a):not(:where([class~="not-prose"] *)) {
   text-decoration: none;
 }
